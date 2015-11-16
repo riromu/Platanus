@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:id="@+id/image_intro"
+            android:scaleType="fitXY"
+            android:src="@drawable/platanus_hispanica"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:id="@+id/seekbarholder"
+       >
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_capture"
+            android:src="@android:drawable/ic_menu_camera"
+            android:onClick="captureImage"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_select"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:onClick="selectFromGallery"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_crop"
+            android:id="@+id/button_process"
+            android:clickable="false"
+            android:onClick="processImage"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_menu_revert"
+            android:id="@+id/button_revert"
+            android:onClick="revert"
+            />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_menu_send"
+            android:id="@+id/button_send"
+            android:onClick="sendData"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_palette"
+            android:id="@+id/palette"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            />
+        <!--es.upv.riromu.arbre.iucomponents.RangeSeekBar android:id="@+id/rangeseekbar" custom:startingMin="10" custom:startingMax="23" custom:min="0" custom:max="255" android:layout_width="fill_parent" android:layout_height="wrap_content" /-->
+
+    </LinearLayout>
+
+</LinearLayout>

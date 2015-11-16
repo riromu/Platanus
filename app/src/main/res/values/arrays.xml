@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="rangeseekbaroptions_entries">
+        <item>Hue Channel</item>
+        <item>Saturation Channel</item>
+        <item>Value Channel</item>
+     </string-array>
+    <string-array name="rangeseekbaroptions_values">
+        <item>"H"</item>
+        <item>"S"</item>
+        <item>"V"</item>
+    </string-array>
+</resources>

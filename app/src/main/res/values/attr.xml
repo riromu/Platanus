@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RangeSeekBar">
+        <attr name="type" format="enum">
+            <enum name="LONG" value="0"/>
+            <enum name="DOUBLE" value="1"/>
+            <enum name="INTEGER" value="2"/>
+            <enum name="FLOAT" value="3"/>
+            <enum name="SHORT" value="4"/>
+            <enum name="BYTE" value="5"/>
+            <enum name="BIG_DECIMAL" value="6"/>
+        </attr>
+		<attr name="min" format="float"/>
+		<attr name="max" format="float"/>
+		<attr name="startingMin" format="float"/>
+		<attr name="startingMax" format="float"/>
+		<attr name="notifyWhileDragging" format="boolean"/>
+	</declare-styleable>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory
+        android:title="@string/preferences_title">
+        <EditTextPreference
+            android:key="minH_preference"
+            android:title="@string/minH_preference"
+            android:summary="@string/minHsummary_preference"
+            android:dialogTitle="@string/minHDialogTitle_preference"
+        android:defaultValue="0"
+        android:inputType="number"/>
+    <EditTextPreference
+        android:key="maxH_preference"
+        android:title="@string/maxH_preference"
+        android:summary="@string/maxHsummary_preference"
+        android:dialogTitle="@string/maxHDialogTitle_preference"
+        android:defaultValue="180"
+        android:inputType="number"/>
+    <EditTextPreference
+        android:key="minS_preference"
+        android:title="@string/minS_preference"
+        android:summary="@string/minSsummary_preference"
+        android:dialogTitle="@string/minSDialogTitle_preference"
+        android:defaultValue="0"
+        android:inputType="number"/>
+    <EditTextPreference
+        android:key="maxS_preference"
+        android:title="@string/maxS_preference"
+        android:summary="@string/maxSsummary_preference"
+        android:dialogTitle="@string/maxSDialogTitle_preference"
+        android:defaultValue="255"
+        android:inputType="number"/>
+    <EditTextPreference
+        android:key="minV_preference"
+        android:title="@string/minV_preference"
+        android:summary="@string/minVsummary_preference"
+        android:dialogTitle="@string/minVDialogTitle_preference"
+        android:defaultValue="0"
+        android:inputType="number"/>
+
+    <EditTextPreference
+        android:key="maxV_preference"
+        android:title="@string/maxV_preference"
+        android:summary="@string/maxVsummary_preference"
+        android:defaultValue="255"
+        android:dialogTitle="@string/maxVDialogTitle_preference"
+        android:inputType="number"/>
+
+        <ListPreference
+            android:key="rangepreference"
+            android:title="@string/rangepreference_title"
+            android:defaultValue="H"
+            android:entries="@array/rangeseekbaroptions_entries"
+            android:entryValues="@array/rangeseekbaroptions_values"
+            android:dialogTitle="@string/dialog_title_list_preference"
+            />
+
+</PreferenceCategory>
+</PreferenceScreen> 
